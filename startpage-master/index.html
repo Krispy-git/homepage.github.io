@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('Clock').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+</script>
+</head>
+<body onload="startTime()" style="background: url(MmzEHnj.jpg); background-size: 100% ;">
+
+<div id="Clock"></div>
+
+    <form id="search-form" action="https://www.google.com/search" method="get">
+        <input id="search-bar" type="text" autofocus type="text" placeholder="Sell your dad" name="q" alt="search">
+        <input id="submit-button" type="submit" value="Search">
+    </form>
+    <section id="link-section">
+
+        <div class="link-box-wrapper">
+            <a href="https://www.reddit.com/">
+                <div id="link-to-Reddit" class="link-box">
+                    <div class="box-image-wrapper">
+                        <img src="Logos\Reddit_logo.png">
+                    </div>
+                    <h3 class="name">Reddit</h3>
+                </div>
+            </a>
+        </div>
+        <div class="link-box-wrapper">
+            <a href="https://forum.xda-developers.com/">
+                <div id="link-to-XDA" class="link-box">
+                    <div class="box-image-wrapper">
+                        <img src="Logos\xda_logo.png">
+                    </div>
+                    <h3 class="name">XDA</h3>
+                </div>
+            </a>
+        </div>
+        <div class="link-box-wrapper">
+            <a href="https://www.youtube.com/">
+                <div id="link-to-youtube" class="link-box">
+                    <div class="box-image-wrapper">
+                        <img src="Logos\youtube_logo.png">
+                    </div>
+                    <h3 class="name">YouTube</h3>
+                </div>
+            </a>
+        </div>
+        <div class="link-box-wrapper">
+            <a href="https://www.netflix.com/">
+                <div id="link-to-netflix" class="link-box">
+                    <div class="box-image-wrapper">
+                        <img src="Logos\Netflix_logo.png">
+                    </div>
+                    <h3 class="name">Netflix</h3>
+                </div>
+            </a>
+        </div>
+        <div class="link-box-wrapper">
+            <a href="https://keep.google.com/">
+                <div id="link-to-Keep" class="link-box">
+                    <div class="box-image-wrapper">
+                        <img src="Logos\keep_logo.png">
+                    </div>
+                    <h3 class="name">Google Keep</h3>
+                </div>
+            </a>
+        </div>
+        <div class="link-box-wrapper">
+            <a href="https://www.amazon.de/">
+                <div id="link-to-amazon.de" class="link-box">
+                    <div class="box-image-wrapper">
+                        <img src="Logos\amazon_logo.png">
+                    </div>
+                    <h3 class="name">Amazon.de</h3>
+                </div>
+            </a>
+        </div>
+        <div class="link-box-wrapper">
+            <a href="https://www.amazon.co.uk/">
+                <div id="link-to-amazon.co.uk" class="link-box">
+                    <div class="box-image-wrapper">
+                        <img src="Logos\amazon_logo.png">
+                    </div>
+                    <h3 class="name">Amazon.co.uk</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+    <p class="footnote">thanks to Sam and Iggy for helping me make this! <3 </p>
+</body>
+</html>
